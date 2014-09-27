@@ -39,8 +39,8 @@ You can work with the control using  standard events (for code-behind) or comman
 
 *Events*
 
-*LeftAreaButtonClicked (when the user clicks on the left button)
-*ToggleAreaButtonClicked (when the user clicks the toggle button)
++LeftAreaButtonClicked (when the user clicks on the left button)
++ToggleAreaButtonClicked (when the user clicks the toggle button)
 
 
 
