@@ -196,7 +196,7 @@
 
 
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" x:Name="MenuPanel1" VerticalAlignment="Bottom" Visibility="{Binding ElementName=SplitButton3,Path=RightToggle,Converter={StaticResource bool2visConv}}">
+                <StackPanel Orientation="Horizontal" x:Name="MenuPanel1" VerticalAlignment="Bottom" Visibility="{Binding ElementName=thirdSplitButton,Path=RightToggle,Converter={StaticResource bool2visConv}}">
                     <Button>Test1</Button>
                     <Button>Test2</Button>
                     <Button>Test3</Button>
