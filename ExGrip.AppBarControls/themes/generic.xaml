@@ -1,0 +1,59 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ExGrip.AppBarControls">
+    <Style TargetType="local:SplitButton">
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:SplitButton">
+                    <Grid Background="{x:Null}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="42"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid x:Name="PART_LeftArea"  Grid.Column="0" Margin="0,0,1,0" Background="{TemplateBinding  LeftAreaBackground}">
+                            <Border >
+                            <Grid Width="40" Height="40" Grid.Column="0" VerticalAlignment="Top" Margin="14,14,0,0" HorizontalAlignment="Left" >
+                                <Image  Width="40" Source="{TemplateBinding TopImage}" Height="40" Stretch="Uniform" />
+                            </Grid>
+                            </Border>
+                        </Grid>
+                        <TextBlock IsHitTestVisible="False" FontSize="12" FontWeight="Bold"  Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="14,0,0,14" Text="{TemplateBinding Caption}"/>
+                        <Grid  Width="42" x:Name="PART_RightArea" Grid.Column="1" Background="{TemplateBinding RightAreaBackground}" Visibility="{TemplateBinding ToggleAreaVisibility}">
+                            <Border x:Name="PART_ToggleThumb">
+                                <Path  Width="10" Height="8" Canvas.Left="0" Canvas.Top="0" Stretch="Fill" Fill="LightGray" Data="F1 M 159.61,138.296L 79.9253,0L 0,138.157L 159.61,138.296 Z ">
+                                    <Path.RenderTransform>
+                                        <CompositeTransform Rotation="-180.131"/>
+                                    </Path.RenderTransform>
+                                </Path>
+                            </Border>
+                        </Grid>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="RightAreaStates">
+                                <VisualState x:Name="RightAreaNormal"/>
+                                <VisualState x:Name="RightAreaHover"/>
+                                <VisualState x:Name="RightAreaHoverOut"/>
+                                <VisualState x:Name="RightAreaMouseDown"/>
+                                <VisualState x:Name="RighAreaMouseUp"/>
+                                <VisualState x:Name="RightToggle"/>
+                                <VisualState x:Name="RightHoverToggle"/>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="LeftAreaStates">
+                                <VisualState x:Name="LeftAreaNormal"/>
+                                <VisualState x:Name="LeftAreaHover"/>
+                                <VisualState x:Name="LeftAreaHoverOut"/>
+                                <VisualState x:Name="LeftAreaMouseDown"/>
+                                <VisualState x:Name="LeftAreaMouseUp"/>
+
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Grid>
+
+                </ControlTemplate>
+            </Setter.Value>
+
+        </Setter>
+
+    </Style>
+</ResourceDictionary>
