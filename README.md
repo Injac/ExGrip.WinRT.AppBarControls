@@ -34,13 +34,13 @@ You can work with the control using  standard events (for code-behind) or comman
 
 *Commands*
 
-*LeftAreaMouseDownCommand and LeftAreaMouseDownCOmmandParameter (when the user clicks on the left button)
-*ToggleButtonClickedCommand and ToggleButtonClickedCommandParameter (when the user clicks the toggle-button)
+* LeftAreaMouseDownCommand and LeftAreaMouseDownCOmmandParameter (when the user clicks on the left button)
+* ToggleButtonClickedCommand and ToggleButtonClickedCommandParameter (when the user clicks the toggle-button)
 
 *Events*
 
-+LeftAreaButtonClicked (when the user clicks on the left button)
-+ToggleAreaButtonClicked (when the user clicks the toggle button)
+* LeftAreaButtonClicked (when the user clicks on the left button)
+* ToggleAreaButtonClicked (when the user clicks the toggle button)
 
 
 
