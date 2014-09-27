@@ -24,5 +24,7 @@ When selected updates the  "RightToggle" property after the parent (for example 
 The second button has set the ToggleOnParentChange propery de-selected (false). Therefore the Button that appears when you hit it's toggle-button will stay there (even when the app-bar is not visible) and the toggle-button will be shown in it's last position (arrow-up, or arrow-down). This allows you to keep the elements to be shown in a visible state.
 
 
+![toggleonfocuschange](https://cloud.githubusercontent.com/assets/1821384/4432000/524efcfa-4681-11e4-8a97-1bd467862004.png)
+
 
 
