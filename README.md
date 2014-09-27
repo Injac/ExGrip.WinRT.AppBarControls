@@ -51,7 +51,7 @@ The SplitButton has the following VisualStates that can be used for customizatio
 
 * RightAreaNormal - state for the toggle-button in "normal" state
 * RightAreaHover - the "mouser-over" state
-* RightAreaHOverOut - the "mouse-out" state
+* RightAreaHoverOut - the "mouse-out" state
 * RightAreaMouseDown - the "clicked" state
 * RightAreaMouseUp - the state when your finger leaves the left mouse button
 * ReightToggle - the "toggle-button toggle" state
