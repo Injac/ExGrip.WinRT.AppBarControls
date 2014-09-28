@@ -67,6 +67,19 @@ The SplitButton has the following VisualStates that can be used for customizatio
 
 You can open the sample project in Expression Blend for VS 2013 and edit the "Default" style that you can find in Main.xaml (within the Page-Resources).
 
+How to contribute
+=================
+
+There is a *dev-branch* that was setup especially for contributions, to merge any additions in the future with the master-branch. Please use this branch to issue your pull-requests.
+
+TO-DO'S
+======
+-Setup Wiki
+-Enhance Documentation
+-Code Reviews
+-Setup Nuget-Packaging
+-Re-work solution structure
+
 LICENSE
 =======
 
