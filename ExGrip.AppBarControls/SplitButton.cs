@@ -1,11 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Shapes;
 using System.Windows.Input;
+using System.Windows;
 
-namespace ExGrip.AppBarControls
-{
+namespace ExGrip.AppBarControls {
 
     // event delegate handler
     public delegate void LeftAreaClicked(object s, EventArgs e);
@@ -15,37 +20,37 @@ namespace ExGrip.AppBarControls
     [TemplatePart(Name = "PART_ToggleThumb", Type = typeof(Border))]
     [TemplatePart(Name = "PART_LeftArea", Type = typeof(Grid))]
     [TemplatePart(Name = "PART_RightArea", Type = typeof(Grid))]
-    public class SplitButton : Control
-    {
+    public class SplitButton : Control {
+
+
+
         private Border thumb;
         private Grid leftArea;
         private Grid rightArea;
 
+
         #region Events
         private event LeftAreaClicked leftAreaButtonClicked;
-        public event LeftAreaClicked LeftAreaButtonClicked
-        {
-            add
-            {
+
+        public event LeftAreaClicked LeftAreaButtonClicked {
+            add {
                 leftAreaButtonClicked += value;
             }
 
-            remove
-            {
+            remove {
                 leftAreaButtonClicked -= value;
             }
         }
 
         private event ToggleAreaClicked toggleAreaButtonClicked;
-        public event ToggleAreaClicked ToggleAreaButtonClicked
-        {
-            add
-            {
+
+
+        public event ToggleAreaClicked ToggleAreaButtonClicked {
+            add {
                 toggleAreaButtonClicked += value;
             }
 
-            remove
-            {
+            remove {
                 toggleAreaButtonClicked -= value;
             }
         }
@@ -53,15 +58,12 @@ namespace ExGrip.AppBarControls
 
         #region DependencyProperties
 
-        public bool RightToggle
-        {
-            get
-            {
+        public bool RightToggle {
+            get {
                 return (bool)GetValue(RightToggleProperty);
             }
 
-            set
-            {
+            set {
                 SetValue(RightToggleProperty, value);
             }
         }
@@ -70,15 +72,14 @@ namespace ExGrip.AppBarControls
         public static readonly DependencyProperty RightToggleProperty =
             DependencyProperty.Register("RightToggle", typeof(bool), typeof(SplitButton), new PropertyMetadata(null));
 
-        public bool ToggleOnParentFocusChange
-        {
-            get
-            {
+
+
+        public bool ToggleOnParentFocusChange {
+            get {
                 return (bool)GetValue(ToggleOnParentFocusChangeProperty);
             }
 
-            set
-            {
+            set {
                 SetValue(ToggleOnParentFocusChangeProperty, value);
             }
         }
@@ -87,15 +88,15 @@ namespace ExGrip.AppBarControls
         public static readonly DependencyProperty ToggleOnParentFocusChangeProperty =
             DependencyProperty.Register("ToggleOnParentFocusChange", typeof(bool), typeof(SplitButton), new PropertyMetadata(false));
 
-        public Visibility ToggleAreaVisibility
-        {
-            get
-            {
+
+
+
+        public Visibility ToggleAreaVisibility {
+            get {
                 return (Visibility)GetValue(ToggleAreaVisibilityProperty);
             }
 
-            set
-            {
+            set {
                 SetValue(ToggleAreaVisibilityProperty, value);
             }
         }
@@ -108,15 +109,14 @@ namespace ExGrip.AppBarControls
                                        );
 
 
-        public object LeftAreaMouseDownCommandParameter
-        {
-            get
-            {
+
+
+        public object LeftAreaMouseDownCommandParameter {
+            get {
                 return (object)GetValue(LeftAreaMouseDownCommandParameterProperty);
             }
 
-            set
-            {
+            set {
                 SetValue(LeftAreaMouseDownCommandParameterProperty, value);
             }
         }
@@ -126,32 +126,35 @@ namespace ExGrip.AppBarControls
             DependencyProperty.Register("LeftAreaMouseDownCommandParameter", typeof(object), typeof(SplitButton), new PropertyMetadata(null));
 
 
-        public ICommand LeftAreaMouseDownCommand
-        {
-            get
-            {
+
+        public ICommand LeftAreaMouseDownCommand {
+            get {
                 return (ICommand)GetValue(LeftAreaMouseDownCommandProperty);
             }
 
-            set
-            {
+            set {
                 SetValue(LeftAreaMouseDownCommandProperty, value);
             }
         }
+
+
+
+
 
         // Using a DependencyProperty as the backing store for RightAreaMouseDownCommand.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty LeftAreaMouseDownCommandProperty =
             DependencyProperty.Register("LeftAreaMouseDownCommand", typeof(ICommand), typeof(SplitButton), new PropertyMetadata(null));
 
-        public object ToggleButtonClickedCommandParameter
-        {
-            get
-            {
+
+
+
+
+        public object ToggleButtonClickedCommandParameter {
+            get {
                 return (object)GetValue(ToggleButtonClickedCommandParameterProperty);
             }
 
-            set
-            {
+            set {
                 SetValue(ToggleButtonClickedCommandParameterProperty, value);
             }
         }
@@ -160,15 +163,15 @@ namespace ExGrip.AppBarControls
         public static readonly DependencyProperty ToggleButtonClickedCommandParameterProperty =
             DependencyProperty.Register("ToggleButtonClickedCommandParameter", typeof(object), typeof(SplitButton), new PropertyMetadata(null));
 
-        public ICommand ToggleButtonClickedCommand
-        {
-            get
-            {
+
+
+
+        public ICommand ToggleButtonClickedCommand {
+            get {
                 return (ICommand)GetValue(ToggleButtonClickedCommandProperty);
             }
 
-            set
-            {
+            set {
                 SetValue(ToggleButtonClickedCommandProperty, value);
             }
         }
@@ -177,15 +180,15 @@ namespace ExGrip.AppBarControls
         public static readonly DependencyProperty ToggleButtonClickedCommandProperty =
             DependencyProperty.Register("ToggleButtonClickedCommand", typeof(ICommand), typeof(SplitButton), new PropertyMetadata(null));
 
-        public Brush ThumbFill
-        {
-            get
-            {
+
+
+
+        public Brush ThumbFill {
+            get {
                 return (Brush)GetValue(ThumbFillProperty);
             }
 
-            set
-            {
+            set {
                 SetValue(ThumbFillProperty, value);
             }
         }
@@ -194,15 +197,14 @@ namespace ExGrip.AppBarControls
         public static readonly DependencyProperty ThumbFillProperty =
             DependencyProperty.Register("ThumbFill", typeof(Brush), typeof(SplitButton), new PropertyMetadata(null));
 
-        public Brush LeftAreaBackground
-        {
-            get
-            {
+
+
+        public Brush LeftAreaBackground {
+            get {
                 return (Brush)GetValue(LeftAreaBackgroundProperty);
             }
 
-            set
-            {
+            set {
                 SetValue(LeftAreaBackgroundProperty, value);
             }
         }
@@ -211,15 +213,14 @@ namespace ExGrip.AppBarControls
         public static readonly DependencyProperty LeftAreaBackgroundProperty =
             DependencyProperty.Register("LeftAreaBackground", typeof(Brush), typeof(SplitButton), new PropertyMetadata(null));
 
-        public Brush RightAreaBackground
-        {
-            get
-            {
+
+
+        public Brush RightAreaBackground {
+            get {
                 return (Brush)GetValue(RightAreaBackgroundProperty);
             }
 
-            set
-            {
+            set {
                 SetValue(RightAreaBackgroundProperty, value);
             }
         }
@@ -228,15 +229,14 @@ namespace ExGrip.AppBarControls
         public static readonly DependencyProperty RightAreaBackgroundProperty =
             DependencyProperty.Register("RightAreaBackground", typeof(Brush), typeof(SplitButton), new PropertyMetadata(null));
 
-        public string Caption
-        {
-            get
-            {
+
+
+        public string Caption {
+            get {
                 return (string)GetValue(CaptionProperty);
             }
 
-            set
-            {
+            set {
                 SetValue(CaptionProperty, value);
             }
         }
@@ -245,15 +245,14 @@ namespace ExGrip.AppBarControls
         public static readonly DependencyProperty CaptionProperty =
             DependencyProperty.Register("Caption", typeof(string), typeof(SplitButton), new PropertyMetadata("Caption"));
 
-        public ImageSource TopImage
-        {
-            get
-            {
+
+
+        public ImageSource TopImage {
+            get {
                 return (ImageSource)GetValue(TopImageProperty);
             }
 
-            set
-            {
+            set {
                 SetValue(TopImageProperty, value);
             }
         }
@@ -264,33 +263,30 @@ namespace ExGrip.AppBarControls
 
         #endregion
 
-        public SplitButton()
-        {
+        public SplitButton() {
             this.DefaultStyleKey = typeof(SplitButton);
             this.MinWidth = 170;
             this.MinHeight = 100;
         }
 
 
-        private static void RightAreaVisibilityChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-        {
+        private static void RightAreaVisibilityChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) {
+
+
 
             var controlInstance = (SplitButton)d;
 
             var grid = controlInstance.GetTemplateChild("PART_LeftArea") as Grid;
 
-            if (grid != null)
-            {
-                if (((Visibility) e.NewValue) == Visibility.Collapsed)
-                {
+            if (grid != null) {
+                if (((Visibility) e.NewValue) == Visibility.Collapsed) {
                     grid.SetValue(Grid.ColumnSpanProperty, 2);
                     var parentGrid = grid.Parent as Grid;
                     grid.InvalidateMeasure();
                     parentGrid.InvalidateMeasure();
                 }
 
-                else
-                {
+                else {
                     grid.SetValue(Grid.ColumnSpanProperty, 1);
                     var parentGrid = grid.Parent as Grid;
                     grid.InvalidateMeasure();
@@ -299,22 +295,23 @@ namespace ExGrip.AppBarControls
             }
         }
 
-        protected override void OnApplyTemplate()
-        {
+
+
+        protected override void OnApplyTemplate() {
+
             this.thumb = this.GetTemplateChild("PART_ToggleThumb") as Border;
             this.leftArea = this.GetTemplateChild("PART_LeftArea") as Grid;
             this.rightArea = this.GetTemplateChild("PART_RightArea") as Grid;
 
-            if (leftArea != null)
-            {
+
+            if (leftArea != null) {
                 this.leftArea.PointerPressed += leftArea_PointerPressed;
                 this.leftArea.PointerReleased += leftArea_PointerReleased;
                 this.leftArea.PointerEntered += leftArea_PointerEntered;
                 this.leftArea.PointerExited += leftArea_PointerExited;
             }
 
-            if (rightArea != null)
-            {
+            if (rightArea != null) {
                 this.rightArea.PointerPressed += rightArea_PointerPressed;
                 this.rightArea.PointerReleased += rightArea_PointerReleased;
                 this.rightArea.PointerEntered += rightArea_PointerEntered;
@@ -322,19 +319,20 @@ namespace ExGrip.AppBarControls
             }
 
             this.LostFocus += SplitButton_LostFocus;
+
+
+
             base.OnApplyTemplate();
 
-            if(this.Parent is FrameworkElement)
-            {
+
+            if(this.Parent is FrameworkElement) {
                 var parent = this.Parent as FrameworkElement;
 
-                if(this.ToggleOnParentFocusChange)
-                {
+                if(this.ToggleOnParentFocusChange) {
                     parent.LostFocus+=parent_LostFocus;
                 }
 
-                else
-                {
+                else {
                     parent.LostFocus -= parent_LostFocus;
                 }
             }
@@ -342,49 +340,51 @@ namespace ExGrip.AppBarControls
             this.ToggleAreaVisibility = this.ToggleAreaVisibility;
         }
 
-        void parent_LostFocus(object sender, RoutedEventArgs e)
-        {
+
+
+        void parent_LostFocus(object sender, RoutedEventArgs e) {
+
             this.RightToggle = false;
             VisualStateManager.GoToState(this, "RightAreaHoverOut", true);
+
         }
 
-        void SplitButton_LostFocus(object sender, RoutedEventArgs e)
-        {
+        void SplitButton_LostFocus(object sender, RoutedEventArgs e) {
+
             VisualStateManager.GoToState(this, "RightAreaHoverOut", true);
+
             RightToggle = false;
         }
-        
-        void rightArea_PointerExited(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e)
-        {
 
-            if (!RightToggle)
-            {
+
+
+        void rightArea_PointerExited(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e) {
+
+            if (!RightToggle) {
                 VisualStateManager.GoToState(this, "RightAreaHoverOut", true);
+
             }
 
-            else
-            {
+            else {
                 VisualStateManager.GoToState(this, "RightToggle", true);
             }
         }
 
-        void rightArea_PointerEntered(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e)
-        {
-            if (!RightToggle)
-            {
+        void rightArea_PointerEntered(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e) {
+            if (!RightToggle) {
+
                 VisualStateManager.GoToState(this, "RightAreaHover", true);
             }
 
-            else
-            {
+            else {
                 VisualStateManager.GoToState(this, "RightHoverToggle", true);
+
             }
         }
 
-        void rightArea_PointerReleased(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e)
-        {
-            if (!RightToggle)
-            {
+        void rightArea_PointerReleased(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e) {
+
+            if (!RightToggle) {
                 VisualStateManager.GoToState(this, "RighAreaMouseUp", true);
             }
 
@@ -392,57 +392,57 @@ namespace ExGrip.AppBarControls
 
         }
 
-        void rightArea_PointerPressed(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e)
-        {
+        void rightArea_PointerPressed(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e) {
 
-            if (RightToggle)
-            {
+            if (RightToggle) {
                 VisualStateManager.GoToState(this, "RightAreaMouseDown", true);
+
+
             }
 
-            else
-            {
+            else {
                 VisualStateManager.GoToState(this, "RightAreaHoover", true);
+
             }
 
-            if (this.toggleAreaButtonClicked != null)
-            {
+
+
+            if (this.toggleAreaButtonClicked != null) {
                 this.toggleAreaButtonClicked.Invoke(this, new EventArgs());
             }
 
             if (this.ToggleButtonClickedCommand != null) {
                 this.ToggleButtonClickedCommand.Execute(this.ToggleButtonClickedCommandParameter);
             }
+
+
         }
 
-        void leftArea_PointerExited(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e)
-        {
+        void leftArea_PointerExited(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e) {
             VisualStateManager.GoToState(this, "LeftAreaHoverOut", true);
         }
 
-        void leftArea_PointerEntered(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e)
-        {
+        void leftArea_PointerEntered(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e) {
             VisualStateManager.GoToState(this, "LeftAreaHover", true);
         }
 
-        void leftArea_PointerReleased(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e)
-        {
+        void leftArea_PointerReleased(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e) {
             VisualStateManager.GoToState(this, "LeftAreaMouseUp", true);
 
-            if (this.LeftAreaMouseDownCommand != null)
-            {
+            if (this.LeftAreaMouseDownCommand != null) {
                 this.LeftAreaMouseDownCommand.Execute(this.LeftAreaMouseDownCommandParameter);
             }
         }
 
-        void leftArea_PointerPressed(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e)
-        {
+        void leftArea_PointerPressed(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e) {
+
             VisualStateManager.GoToState(this, "LeftAreaMouseDown", true);
 
-            if(this.leftAreaButtonClicked!=null)
-            {
+            if(this.leftAreaButtonClicked!=null) {
                 this.leftAreaButtonClicked.Invoke(this, new EventArgs());
             }
+
+
 
         }
     }
