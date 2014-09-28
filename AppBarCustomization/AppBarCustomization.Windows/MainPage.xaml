@@ -160,7 +160,7 @@
                                                 LeftAreaMouseDownCommand="{Binding Cmd}"
                                                 LeftAreaMouseDownCommandParameter="Hello World!"
                                                 VerticalAlignment="Top" 
-                                                TopImage="Assets/hometest.png"
+                                                TopImage="Assets/hometest.png" 
                                                 Caption="HOME" Width="121" 
                                                 ThumbFill="#FF4D4848" 
                                                 RightAreaBackground="#FF3F3F3F" 
@@ -171,9 +171,10 @@
                                                 Style="{StaticResource Default}" 
                                                 ToggleAreaVisibility="Collapsed"/>
                     <AppBarControls:SplitButton 
-                        HorizontalAlignment="Left" Margin="14,0,0,0" x:Name="secondSplitButton"                                                
-                        VerticalAlignment="Top" TopImage="Assets/jz-avatar-multilayer-RWB.png" 
-                        Caption="AVATAR" Width="121" ThumbFill="#FF4D4848" 
+                        HorizontalAlignment="Left" Margin="14,0,0,0" x:Name="secondSplitButton"
+                                                
+                       VerticalAlignment="Top" TopImage="Assets/StoreLogo.png" 
+                        Caption="HOME" Width="121" ThumbFill="#FF4D4848" 
                         RightAreaBackground="#FF3F3F3F" 
                         LeftAreaBackground="#FF3F3F3F" 
                         Height="100" 
@@ -184,7 +185,7 @@
 
                     <AppBarControls:SplitButton HorizontalAlignment="Left" Margin="14,0,0,0" x:Name="thirdSplitButton"          
                                                 VerticalAlignment="Top" TopImage="Assets/user_male_portrait.png" 
-                                                Caption="USER" Width="121" 
+                                                Caption="HOME" Width="121" 
                                                 ThumbFill="#FF4D4848" 
                                                 RightAreaBackground="#FF3F3F3F" 
                                                 LeftAreaBackground="#FF3F3F3F" 
@@ -192,6 +193,7 @@
                                                 ToggleAreaVisibility="Visible" 
                                                 ToggleOnParentFocusChange="True"/>
                     <Button x:Name="testbtn" Content="Button" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed"/>
+
 
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" x:Name="MenuPanel1" VerticalAlignment="Bottom" Visibility="{Binding ElementName=thirdSplitButton,Path=RightToggle,Converter={StaticResource bool2visConv}}">
