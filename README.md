@@ -74,11 +74,11 @@ There is a *dev-branch* that was setup especially for contributions, to merge an
 
 TO-DO'S
 ======
--Setup Wiki
--Enhance Documentation
--Code Reviews
--Setup Nuget-Packaging
--Re-work solution structure
+* Setup Wiki
+* Enhance Documentation
+* Code Reviews
+* Setup Nuget-Packaging
+* Re-work solution structure
 
 LICENSE
 =======
