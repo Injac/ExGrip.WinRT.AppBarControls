@@ -105,7 +105,7 @@ namespace ExGrip.AppBarControls {
         public static readonly DependencyProperty ToggleAreaVisibilityProperty =
             DependencyProperty.Register("ToggleAreaVisibility",
                                         typeof(Visibility), typeof(SplitButton),
-                                        new PropertyMetadata(null, new PropertyChangedCallback(RightAreaVisibilityChanged))
+                                        new PropertyMetadata(default(Visibility), new PropertyChangedCallback(RightAreaVisibilityChanged))
                                        );
 
 
@@ -274,25 +274,39 @@ namespace ExGrip.AppBarControls {
 
 
 
-            var controlInstance = (SplitButton)d;
+            if (d!=null) {
+                var controlInstance = (SplitButton)d;
 
-            var grid = controlInstance.GetTemplateChild("PART_LeftArea") as Grid;
 
-            if (grid != null) {
-                if (((Visibility) e.NewValue) == Visibility.Collapsed) {
-                    grid.SetValue(Grid.ColumnSpanProperty, 2);
-                    var parentGrid = grid.Parent as Grid;
-                    grid.InvalidateMeasure();
-                    parentGrid.InvalidateMeasure();
-                }
+                var grid = controlInstance.GetTemplateChild("PART_LeftArea") as Grid;
 
-                else {
-                    grid.SetValue(Grid.ColumnSpanProperty, 1);
-                    var parentGrid = grid.Parent as Grid;
-                    grid.InvalidateMeasure();
-                    parentGrid.InvalidateMeasure();
+                if (grid != null) {
+                    if (e.NewValue != null) {
+                        if (((Visibility)e.NewValue) == Visibility.Collapsed) {
+                            grid.SetValue(Grid.ColumnSpanProperty, 2);
+
+                            var parentGrid = grid.Parent as Grid;
+
+                            if (parentGrid != null) {
+                                grid.InvalidateMeasure();
+                                parentGrid.InvalidateMeasure();
+                            }
+                        }
+
+                        else {
+                            grid.SetValue(Grid.ColumnSpanProperty, 1);
+
+                            var parentGrid = grid.Parent as Grid;
+
+                            if (parentGrid != null) {
+                                grid.InvalidateMeasure();
+                                parentGrid.InvalidateMeasure();
+                            }
+                        }
+                    }
                 }
             }
+
         }
 
 
@@ -322,14 +336,11 @@ namespace ExGrip.AppBarControls {
 
 
 
-            base.OnApplyTemplate();
-
-
-            if(this.Parent is FrameworkElement) {
+            if (this.Parent is FrameworkElement) {
                 var parent = this.Parent as FrameworkElement;
 
-                if(this.ToggleOnParentFocusChange) {
-                    parent.LostFocus+=parent_LostFocus;
+                if (this.ToggleOnParentFocusChange) {
+                    parent.LostFocus += parent_LostFocus;
                 }
 
                 else {
@@ -337,7 +348,15 @@ namespace ExGrip.AppBarControls {
                 }
             }
 
+
             this.ToggleAreaVisibility = this.ToggleAreaVisibility;
+
+
+
+            base.OnApplyTemplate();
+
+
+
         }
 
 

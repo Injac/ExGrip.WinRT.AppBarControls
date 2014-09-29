@@ -208,13 +208,5 @@
 
     </Page.TopAppBar>
 
-    <Grid Background="#FF0E0D0D">
-
-
-
-
-
-
-
-    </Grid>
+    <Grid Background="#FF0E0D0D" Name="testgrid"/>
 </Page>
