@@ -1,0 +1,32 @@
+Changelog
+=========
+
+%%version%% (unreleased)
+------------------------
+
+- Merge pull request #8 from Injac/development. [Ilija Injac]
+
+  Development
+
+- Update README.md. [Ilija Injac]
+
+  Updated formatting.
+
+- Update README.md. [Ilija Injac]
+
+  Added contribution section and some to-do's.
+
+- Quick-fix sample. [Ilija Injac]
+
+- Merge branch 'master' of
+  https://github.com/Injac/ExGrip.WinRT.AppBarControls.git. [Ilija
+  Injac]
+
+- Small changes in Main.xaml. [Ilija Injac]
+
+- Initial Commit. [Ilija Injac]
+
+- Initial commit to add default .gitIgnore and .gitAttribute files.
+  [Ilija Injac]
+
+
