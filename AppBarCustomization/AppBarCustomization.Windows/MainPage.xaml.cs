@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExGrip.AppBarControls;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -57,6 +58,7 @@ namespace AppBarCustomization {
             this.Cmd = new TestCommand();
             this.ToggleCommand = new ToggleCommandBarCommand();
             this.DataContext = this;
+
 
         }
 
