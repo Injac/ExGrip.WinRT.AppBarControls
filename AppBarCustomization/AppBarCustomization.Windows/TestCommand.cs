@@ -1,58 +1,37 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 using Windows.UI.Popups;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
 
-namespace AppBarCustomization {
-    public class TestCommand : ICommand {
-        public async void Execute(object parameter) {
-            MessageDialog d = new MessageDialog(parameter as string,"Message");
-            await d.ShowAsync();
-
+namespace AppBarCustomization 
+{
+    /// <summary>
+    /// Define the TestCommand.
+    /// </summary>
+    public class TestCommand : ICommand 
+    {
+        /// <summary>
+        /// Defines the method to be called when the command is invoked.
+        /// </summary>
+        /// <param name="parameter">Data used by the command.  If the command does not require data to be passed, this object can be set to null.</param>
+        public async void Execute(object parameter) 
+        {
+            var messageDialog = new MessageDialog(parameter as string,"Message");
+            await messageDialog.ShowAsync();
         }
 
-        public bool CanExecute(object parameter) {
+        /// <summary>
+        /// Defines the method that determines whether the command can execute in its current state.
+        /// </summary>
+        /// <param name="parameter">Data used by the command.  If the command does not require data to be passed, this object can be set to null.</param>
+        /// <returns>true if this command can be executed; otherwise, false.</returns>
+        public bool CanExecute(object parameter) 
+        {
             return true;
         }
-        public event EventHandler CanExecuteChanged;
 
-
-    }
-
-
-    public class ToggleCommandBarCommand : ICommand {
-
-        private bool collapse = false;
-
-        public  void Execute(object parameter) {
-
-
-            var stackPanel = parameter as StackPanel;
-
-
-            if (collapse) {
-                stackPanel.Visibility = Visibility.Collapsed;
-
-            }
-
-            else {
-                stackPanel.Visibility = Visibility.Visible;
-
-            }
-
-            collapse = !collapse;
-
-        }
-
-        public bool CanExecute(object parameter) {
-            return true;
-        }
+        /// <summary>
+        /// Occurs when changes occur that affect whether or not the command should execute.
+        /// </summary>
         public event EventHandler CanExecuteChanged;
     }
-
 }

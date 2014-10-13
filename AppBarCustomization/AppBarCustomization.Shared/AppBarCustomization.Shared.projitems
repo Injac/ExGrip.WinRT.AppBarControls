@@ -25,4 +25,7 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Settings.StyleCop" />
+  </ItemGroup>
 </Project>

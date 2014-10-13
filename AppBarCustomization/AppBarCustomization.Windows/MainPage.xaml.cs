@@ -1,88 +1,59 @@
-﻿using ExGrip.AppBarControls;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
+﻿using System;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
-
-namespace AppBarCustomization {
-
-
+namespace AppBarCustomization 
+{
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page {
+    public sealed partial class MainPage 
+    {
+        private bool _collapsed = true;
 
-
-
-        TestCommand cmd;
-
-        public TestCommand Cmd {
-            get {
-                return cmd;
-            }
-
-            set {
-                cmd = value;
-            }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MainPage"/> class.
+        /// </summary>
+        public MainPage()
+        {
+            InitializeComponent();
+            Cmd = new TestCommand();
+            ToggleCommand = new ToggleCommandBarCommand();
+            DataContext = this;
         }
 
+        /// <summary>
+        /// Gets or sets the command.
+        /// </summary>
+        /// <value>The command.</value>
+        public TestCommand Cmd { get; set; }
 
-        ToggleCommandBarCommand cmdBar;
+        /// <summary>
+        /// Gets or sets the toggle command.
+        /// </summary>
+        /// <value>The toggle command.</value>
+        public ToggleCommandBarCommand ToggleCommand { get; set; }
 
-        public ToggleCommandBarCommand ToggleCommand {
-            get {
-                return cmdBar;
-            }
-
-            set {
-                cmdBar = value;
-            }
+        /// <summary>
+        /// Handles the LeftAreaButtonClicked event of the SecondButton control.
+        /// </summary>
+        /// <param name="s">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        private async void SecondButton_LeftAreaButtonClicked(object s, EventArgs e)
+        {
+            var messageDialog  = new MessageDialog("Hello World from Event", "Message");
+            await messageDialog.ShowAsync();
         }
 
-
-        public MainPage() {
-            this.InitializeComponent();
-            this.Cmd = new TestCommand();
-            this.ToggleCommand = new ToggleCommandBarCommand();
-            this.DataContext = this;
-
-
-        }
-
-        private async void secondButton_LeftAreaButtonClicked(object s, EventArgs e) {
-            MessageDialog d = new MessageDialog("Hello World from Event", "Message");
-            await d.ShowAsync();
-        }
-        private bool collapsed = true;
-        private void secondButton_ToggleAreaButtonClicked(object s, EventArgs e) {
-
-
-
-            if (collapsed) {
-                testbtn.Visibility = Visibility.Visible;
-
-            }
-
-            else {
-                testbtn.Visibility = Visibility.Collapsed;
-
-            }
-
-            collapsed = !collapsed;
-
+        /// <summary>
+        /// Handles the ToggleAreaButtonClicked event of the SecondButton control.
+        /// </summary>
+        /// <param name="s">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        private void SecondButton_ToggleAreaButtonClicked(object s, EventArgs e)
+        {
+            testbtn.Visibility = _collapsed ? Visibility.Visible : Visibility.Collapsed;
+            _collapsed = !_collapsed;
         }
     }
 }
