@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="9df5a112-d6d7-4389-b032-c64e0b10988a" Title="ExGrip.AppBarControls Namespace" Url="html/1459347224.htm">
+    <HelpTOCNode Title="LeftAreaClicked Delegate" Url="html/1639516178.htm" />
+    <HelpTOCNode Id="b1561e28-2c2b-4adf-8fc5-f50f9e4c265f" Title="SplitButton Class" Url="html/1379765127.htm">
+      <HelpTOCNode Title="SplitButton Members" Url="html/557206311.htm" />
+      <HelpTOCNode Title="SplitButton Constructor " Url="html/847159561.htm" />
+      <HelpTOCNode Id="94ca1bcf-ec64-4f49-962d-e1941dd705bf" Title="SplitButton Fields" Url="html/1494403701.htm">
+        <HelpTOCNode Title="CaptionProperty Field" Url="html/1302735821.htm" />
+        <HelpTOCNode Title="LeftAreaBackgroundProperty Field" Url="html/1689959138.htm" />
+        <HelpTOCNode Title="LeftAreaMouseDownCommandParameterProperty Field" Url="html/650537963.htm" />
+        <HelpTOCNode Title="LeftAreaMouseDownCommandProperty Field" Url="html/724323698.htm" />
+        <HelpTOCNode Title="RightAreaBackgroundProperty Field" Url="html/1750246449.htm" />
+        <HelpTOCNode Title="RightToggleProperty Field" Url="html/138143378.htm" />
+        <HelpTOCNode Title="ThumbFillProperty Field" Url="html/192944959.htm" />
+        <HelpTOCNode Title="ToggleAreaVisibilityProperty Field" Url="html/905649168.htm" />
+        <HelpTOCNode Title="ToggleButtonClickedCommandParameterProperty Field" Url="html/636836907.htm" />
+        <HelpTOCNode Title="ToggleButtonClickedCommandProperty Field" Url="html/332514910.htm" />
+        <HelpTOCNode Title="ToggleOnParentFocusChangeProperty Field" Url="html/1466639590.htm" />
+        <HelpTOCNode Title="TopImageProperty Field" Url="html/536035068.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="SplitButton Methods" Url="html/1504796115.htm" />
+      <HelpTOCNode Id="48c4b19e-616b-455f-adcc-6947c45b7ebe" Title="SplitButton Properties" Url="html/1104862529.htm">
+        <HelpTOCNode Title="Caption Property " Url="html/1592066175.htm" />
+        <HelpTOCNode Title="LeftAreaBackground Property " Url="html/1293613885.htm" />
+        <HelpTOCNode Title="LeftAreaMouseDownCommand Property " Url="html/928835731.htm" />
+        <HelpTOCNode Title="LeftAreaMouseDownCommandParameter Property " Url="html/737973295.htm" />
+        <HelpTOCNode Title="RightAreaBackground Property " Url="html/1808113426.htm" />
+        <HelpTOCNode Title="RightToggle Property " Url="html/1620134041.htm" />
+        <HelpTOCNode Title="ThumbFill Property " Url="html/1269626752.htm" />
+        <HelpTOCNode Title="ToggleAreaVisibility Property " Url="html/1254187772.htm" />
+        <HelpTOCNode Title="ToggleButtonClickedCommand Property " Url="html/1950417740.htm" />
+        <HelpTOCNode Title="ToggleButtonClickedCommandParameter Property " Url="html/1282909984.htm" />
+        <HelpTOCNode Title="ToggleOnParentFocusChange Property " Url="html/943674149.htm" />
+        <HelpTOCNode Title="TopImage Property " Url="html/122606067.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f885d5af-9e37-43a7-8be7-ed7f6ec7d847" Title="SplitButton Events" Url="html/2076350526.htm">
+        <HelpTOCNode Title="LeftAreaButtonClicked Event" Url="html/211292293.htm" />
+        <HelpTOCNode Title="ToggleAreaButtonClicked Event" Url="html/755581088.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="ToggleAreaClicked Delegate" Url="html/835877569.htm" />
+  </HelpTOCNode>
+</HelpTOC>

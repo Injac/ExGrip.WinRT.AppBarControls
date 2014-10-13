@@ -180,8 +180,8 @@
                         Height="100" 
                         Style="{StaticResource Default}" 
                         ToggleAreaVisibility="Visible" 
-                        LeftAreaButtonClicked="secondButton_LeftAreaButtonClicked" 
-                        ToggleAreaButtonClicked="secondButton_ToggleAreaButtonClicked"/>
+                        LeftAreaButtonClicked="SecondButton_LeftAreaButtonClicked" 
+                        ToggleAreaButtonClicked="SecondButton_ToggleAreaButtonClicked"/>
 
                     <AppBarControls:SplitButton HorizontalAlignment="Left" Margin="14,0,0,0" x:Name="thirdSplitButton"          
                                                 VerticalAlignment="Top" TopImage="Assets/user_male_portrait.png" 

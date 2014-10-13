@@ -120,12 +120,14 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestCommand.cs" />
+    <Compile Include="ToggleCommandBarCommand.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="AppBarCustomization.Windows_TemporaryKey.pfx" />
+    <None Include="Settings.StyleCop" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\hometest.png">

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="Caption property" Url="html/1592066175.htm" />
+  <HelpKINode Title="CaptionProperty field" Url="html/1302735821.htm" />
+  <HelpKINode Title="ExGrip.AppBarControls namespace" Url="html/1459347224.htm" />
+  <HelpKINode Title="ExGrip.AppBarControls.LeftAreaClicked delegate" Url="html/1639516178.htm" />
+  <HelpKINode Title="ExGrip.AppBarControls.SplitButton class">
+    <HelpKINode Title="SplitButton Class" Url="html/1379765127.htm" />
+    <HelpKINode Title="SplitButton Members" Url="html/557206311.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ExGrip.AppBarControls.ToggleAreaClicked delegate" Url="html/835877569.htm" />
+  <HelpKINode Title="LeftAreaBackground property" Url="html/1293613885.htm" />
+  <HelpKINode Title="LeftAreaBackgroundProperty field" Url="html/1689959138.htm" />
+  <HelpKINode Title="LeftAreaButtonClicked event" Url="html/211292293.htm" />
+  <HelpKINode Title="LeftAreaClicked delegate" Url="html/1639516178.htm" />
+  <HelpKINode Title="LeftAreaMouseDownCommand property" Url="html/928835731.htm" />
+  <HelpKINode Title="LeftAreaMouseDownCommandParameter property" Url="html/737973295.htm" />
+  <HelpKINode Title="LeftAreaMouseDownCommandParameterProperty field" Url="html/650537963.htm" />
+  <HelpKINode Title="LeftAreaMouseDownCommandProperty field" Url="html/724323698.htm" />
+  <HelpKINode Title="RightAreaBackground property" Url="html/1808113426.htm" />
+  <HelpKINode Title="RightAreaBackgroundProperty field" Url="html/1750246449.htm" />
+  <HelpKINode Title="RightToggle property" Url="html/1620134041.htm" />
+  <HelpKINode Title="RightToggleProperty field" Url="html/138143378.htm" />
+  <HelpKINode Title="SplitButton class">
+    <HelpKINode Title="SplitButton Class" Url="html/1379765127.htm" />
+    <HelpKINode Title="SplitButton Members" Url="html/557206311.htm" />
+    <HelpKINode Title="about SplitButton class" Url="html/1379765127.htm" />
+    <HelpKINode Title="all members" Url="html/557206311.htm" />
+    <HelpKINode Title="constructor" Url="html/847159561.htm" />
+    <HelpKINode Title="events" Url="html/2076350526.htm" />
+    <HelpKINode Title="fields" Url="html/1494403701.htm" />
+    <HelpKINode Title="methods" Url="html/1504796115.htm" />
+    <HelpKINode Title="properties" Url="html/1104862529.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SplitButton.Caption property" Url="html/1592066175.htm" />
+  <HelpKINode Title="SplitButton.CaptionProperty field" Url="html/1302735821.htm" />
+  <HelpKINode Title="SplitButton.LeftAreaBackground property" Url="html/1293613885.htm" />
+  <HelpKINode Title="SplitButton.LeftAreaBackgroundProperty field" Url="html/1689959138.htm" />
+  <HelpKINode Title="SplitButton.LeftAreaButtonClicked event" Url="html/211292293.htm" />
+  <HelpKINode Title="SplitButton.LeftAreaMouseDownCommand property" Url="html/928835731.htm" />
+  <HelpKINode Title="SplitButton.LeftAreaMouseDownCommandParameter property" Url="html/737973295.htm" />
+  <HelpKINode Title="SplitButton.LeftAreaMouseDownCommandParameterProperty field" Url="html/650537963.htm" />
+  <HelpKINode Title="SplitButton.LeftAreaMouseDownCommandProperty field" Url="html/724323698.htm" />
+  <HelpKINode Title="SplitButton.RightAreaBackground property" Url="html/1808113426.htm" />
+  <HelpKINode Title="SplitButton.RightAreaBackgroundProperty field" Url="html/1750246449.htm" />
+  <HelpKINode Title="SplitButton.RightToggle property" Url="html/1620134041.htm" />
+  <HelpKINode Title="SplitButton.RightToggleProperty field" Url="html/138143378.htm" />
+  <HelpKINode Title="SplitButton.SplitButton constructor" Url="html/847159561.htm" />
+  <HelpKINode Title="SplitButton.ThumbFill property" Url="html/1269626752.htm" />
+  <HelpKINode Title="SplitButton.ThumbFillProperty field" Url="html/192944959.htm" />
+  <HelpKINode Title="SplitButton.ToggleAreaButtonClicked event" Url="html/755581088.htm" />
+  <HelpKINode Title="SplitButton.ToggleAreaVisibility property" Url="html/1254187772.htm" />
+  <HelpKINode Title="SplitButton.ToggleAreaVisibilityProperty field" Url="html/905649168.htm" />
+  <HelpKINode Title="SplitButton.ToggleButtonClickedCommand property" Url="html/1950417740.htm" />
+  <HelpKINode Title="SplitButton.ToggleButtonClickedCommandParameter property" Url="html/1282909984.htm" />
+  <HelpKINode Title="SplitButton.ToggleButtonClickedCommandParameterProperty field" Url="html/636836907.htm" />
+  <HelpKINode Title="SplitButton.ToggleButtonClickedCommandProperty field" Url="html/332514910.htm" />
+  <HelpKINode Title="SplitButton.ToggleOnParentFocusChange property" Url="html/943674149.htm" />
+  <HelpKINode Title="SplitButton.ToggleOnParentFocusChangeProperty field" Url="html/1466639590.htm" />
+  <HelpKINode Title="SplitButton.TopImage property" Url="html/122606067.htm" />
+  <HelpKINode Title="SplitButton.TopImageProperty field" Url="html/536035068.htm" />
+  <HelpKINode Title="ThumbFill property" Url="html/1269626752.htm" />
+  <HelpKINode Title="ThumbFillProperty field" Url="html/192944959.htm" />
+  <HelpKINode Title="ToggleAreaButtonClicked event" Url="html/755581088.htm" />
+  <HelpKINode Title="ToggleAreaClicked delegate" Url="html/835877569.htm" />
+  <HelpKINode Title="ToggleAreaVisibility property" Url="html/1254187772.htm" />
+  <HelpKINode Title="ToggleAreaVisibilityProperty field" Url="html/905649168.htm" />
+  <HelpKINode Title="ToggleButtonClickedCommand property" Url="html/1950417740.htm" />
+  <HelpKINode Title="ToggleButtonClickedCommandParameter property" Url="html/1282909984.htm" />
+  <HelpKINode Title="ToggleButtonClickedCommandParameterProperty field" Url="html/636836907.htm" />
+  <HelpKINode Title="ToggleButtonClickedCommandProperty field" Url="html/332514910.htm" />
+  <HelpKINode Title="ToggleOnParentFocusChange property" Url="html/943674149.htm" />
+  <HelpKINode Title="ToggleOnParentFocusChangeProperty field" Url="html/1466639590.htm" />
+  <HelpKINode Title="TopImage property" Url="html/122606067.htm" />
+  <HelpKINode Title="TopImageProperty field" Url="html/536035068.htm" />
+</HelpKI>

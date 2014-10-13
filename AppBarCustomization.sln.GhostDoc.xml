@@ -1,0 +1,39 @@
+<GhostDoc>
+  <SpellChecker>
+    <IncludeExtensions>
+    </IncludeExtensions>
+    <IgnoreExtensions>
+    </IgnoreExtensions>
+    <IgnoreFiles>
+    </IgnoreFiles>
+  </SpellChecker>
+<HelpConfigurations selected="HelpFile">
+  <HelpConfiguration name="HelpFile">
+    <OutputPath>.\Helper</OutputPath>
+    <HelpFileName>AppBarCustomization</HelpFileName>
+    <ImageFolderPath />
+    <HtmlFormats>
+      <HtmlHelp>true</HtmlHelp>
+      <MSHelpViewer>false</MSHelpViewer>
+      <MSHelp2>false</MSHelp2>
+      <Website>true</Website>
+    </HtmlFormats>
+    <IncludeScopes>
+      <Public>true</Public>
+      <Internal>false</Internal>
+      <Protected>false</Protected>
+      <Private>false</Private>
+      <Inherited>true</Inherited>
+      <InheritedFromReferences>true</InheritedFromReferences>
+      <EnableTags>false</EnableTags>
+      <TagList />
+    </IncludeScopes>
+    <ResolveCrefLinks>true</ResolveCrefLinks>
+    <HeaderText>ExGrip Controls</HeaderText>
+    <FooterText>Follow me @AWSOMEDEVSIGNER </FooterText>
+    <SelectedProjects>
+      <SelectedProject>ExGrip.AppBarControls</SelectedProject>
+    </SelectedProjects>
+  </HelpConfiguration>
+</HelpConfigurations>
+</GhostDoc>
