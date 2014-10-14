@@ -67,6 +67,16 @@ The SplitButton has the following VisualStates that can be used for customizatio
 
 You can open the sample project in Expression Blend for VS 2013 and edit the "Default" style that you can find in Main.xaml (within the Page-Resources).
 
+
+Helper
+=================
+
+> [Helper for online usage](http://htmlpreview.github.io/?https://github.com/Injac/ExGrip.WinRT.AppBarControls/blob/master/Helper/WebSite/Index.html)
+
+
+> [Helper for offline usage](https://github.com/Injac/ExGrip.WinRT.AppBarControls/raw/master/Helper/AppBarCustomization.chm)
+
+
 How to contribute
 =================
 
@@ -75,9 +85,9 @@ There is a *dev-branch* that was setup especially for contributions, to merge an
 TO-DO'S
 ======
 * Setup Wiki
-* Enhance Documentation
+* Enhance Documentation 
 * Code Reviews
-* Setup Nuget-Packaging
+* Setup Nuget-Packaging 
 * Re-work solution structure
 
 LICENSE
