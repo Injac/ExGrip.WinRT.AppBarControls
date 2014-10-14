@@ -13,6 +13,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppBarCustomization.Windows
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExGrip.AppBarControls", "ExGrip.AppBarControls\ExGrip.AppBarControls.csproj", "{64CB8D9E-F13E-4FCB-95EC-5A895D6DDE6B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{87062007-52AA-4E97-85D9-9B61EA9EB45F}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		AppBarCustomization\AppBarCustomization.Shared\AppBarCustomization.Shared.projitems*{04718899-6e26-4966-80ec-e815ea24bdc4}*SharedItemsImports = 4
