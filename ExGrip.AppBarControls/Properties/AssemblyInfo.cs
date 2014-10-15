@@ -1,17 +1,15 @@
 ﻿using System.Resources;
 using System.Reflection;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ExGrip.AppBarControls")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("ExGrip AppBarControls")]
+[assembly: AssemblyDescription("Split button for Windows 8.1 to be used with AppBars (Top) appbar similar to the Microsoft Weather app.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ExGrip.AppBarControls")]
-[assembly: AssemblyCopyright("Copyright ©  2014")]
+[assembly: AssemblyCompany("ExGrip")]
+[assembly: AssemblyProduct("ExGrip AppBarControls")]
+[assembly: AssemblyCopyright("Copyright © 2014 ExGrip")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: NeutralResourcesLanguage("en")]
