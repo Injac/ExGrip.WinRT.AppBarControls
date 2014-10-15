@@ -4,13 +4,13 @@
 				<version>1.0.0.0</version>
 				<title>ExGrip AppBarControls</title>
 				<authors>AWSOMEDEVSIGNER, saramgsilva</authors>
-				<owners>ExGrip</owners>
+				<owners>ExGrip LLC</owners>
 				<licenseUrl>https://raw.githubusercontent.com/saramgsilva/BluethoodSampleUsing32feet.Net/master/LICENSE</licenseUrl>
-				<projectUrl>http://saramgsilva.github.io/BluethoodSampleUsing32feet.Net</projectUrl>
-				<iconUrl>http://s27.postimg.org/5i9zb6s27/image.png</iconUrl>
+				<projectUrl>https://github.com/Injac/ExGrip.WinRT.AppBarControls</projectUrl>
+				<iconUrl>http://www.exgrip.com/img/cloudonly_logo_web.png</iconUrl>
 				<requireLicenseAcceptance>false</requireLicenseAcceptance>
 				<description>Split button for Windows 8.1 to be used with AppBars (Top) appbar similar to the Microsoft Weather app.</description>
-				<copyright>Copyright 2014 ExGrip</copyright>
+				<copyright>Copyright 2014 ExGrip LLC</copyright>
 				<language>en-US</language>
 				<tags>SplitButton, WinRT, Windows Store Apps, Windows Phone, ExGrip, AWSOMEDEVSIGNER , saramgsilva</tags>
 		</metadata>
